@@ -86,77 +86,10 @@
 <body>
   <h1>Right way to wear seatbelts</h1>
 <div class="overlay">
-<div class="slideshow-container">
-  <div class="mySlides">
-    <img src="sb1.jpg" style="width:100%">
-  </div>
 
-  <div class="mySlides">
-    <img src="sb2.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="sb3.jpg" style="width:100%">
-  </div>
-  <div class="mySlides">
-    <img src="sb4.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="sb5.jpg" style="width:100%">
-  </div>
-
-  <div class="mySlides">
-    <img src="sb6.jpg" style="width:100%">
-  </div>
-  <div class="mySlides">
-    <img src="sb7.jpg" style="width:100%">
-  </div>
-  <!-- Previous and next buttons -->
-  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-  <a class="next" onclick="plusSlides(1)">&#10095;</a>
-</div>
 </div>
 
-<!-- Dots to indicate current slide -->
-<div style="text-align:center">
-  <span class="dot" onclick="currentSlide(1)"></span>
-  <span class="dot" onclick="currentSlide(2)"></span>
-  <span class="dot" onclick="currentSlide(3)"></span>
-  <span class="dot" onclick="currentSlide(4)"></span>
-  <span class="dot" onclick="currentSlide(5)"></span>
-  <span class="dot" onclick="currentSlide(6)"></span>
-  <span class="dot" onclick="currentSlide(7)"></span>
-</div>
 
-<script>
-var slideIndex = 1;
-showSlides(slideIndex);
-
-function plusSlides(n) {
-  showSlides(slideIndex += n);
-}
-
-function currentSlide(n) {
-  showSlides(slideIndex = n);
-}
-
-function showSlides(n) {
-  var i;
-  var slides = document.getElementsByClassName("mySlides");
-  var dots = document.getElementsByClassName("dot");
-  if (n > slides.length) {slideIndex = 1}
-  if (n < 1) {slideIndex = slides.length}
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = "none";
-  }
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace(" active", "");
-  }
-  slides[slideIndex-1].style.display = "block";
-  dots[slideIndex-1].className += " active";
-}
-</script>
 
 </body>
 </html>
