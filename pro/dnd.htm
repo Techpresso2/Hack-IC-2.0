@@ -27,7 +27,7 @@
       padding: 10px;
       margin: 10px;
       text-align: center;
-      
+
     }
 
     .button-container {
@@ -63,14 +63,14 @@
       box-shadow: 5px;
     }
 
-    
+
   </style>
 </head>
 <body>
   <h1>Don't Drink and Drive</h1>
 <div class="overlay">
   <video id="seatbelt_vid"  class="video-container" controls muted autoplay="true">
-    <source src = "C:\Users\abhay\OneDrive\Desktop\pro\dnd.mov" type="video/mp4">
+    <source src = "dnd.mov" type="video/mp4">
   </video>
   <div class="button-container">
 <button class="button" id="reload_button">Reload</button>
@@ -91,7 +91,7 @@
 
   reload_button.addEventListener("click",() => {
     video.currentTime = 0;
-    video.load(); 
+    video.load();
   });
 
 </script>
