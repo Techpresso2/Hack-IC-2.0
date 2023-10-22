@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage</title>
+  <style>
+    body {
+      background-image: url('img.jpg');
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      margin: 0; 
+      padding: 0; 
+      
+    }
+    header {
+            background-color: black;
+            padding: 10px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .app-bar-text {
+            color: white;
+            margin-left: 20px;
+            font-size: 20px;
+        }
+
+        .app-bar-button {
+            display: flex;
+            align-items: center;
+        }
+
+        .home-button {
+            background-color: black;
+            border: none;
+            color: white;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      
+    }
+
+    .button-container {
+      position: fixed; 
+      top: 50%; 
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 50px;
+      color: red;
+      padding: 20px;
+      margin: 30px;
+      text-align: center;
+      z-index: 1;
+    }
+
+    .button {
+      background-color: transparent;
+      border: 2px solid red;
+      color: whitesmoke;
+      padding: 20px 40px;
+      font-size: 20px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+      margin: 10px;
+    }
+
+    .button:hover {
+      background-color: rgba(255, 255, 255, 0.5);
+      box-shadow: 5px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="app-bar-text">Innovation in Transportation</div>
+   <a href="index.htm">
+    <div class="app-bar-button">
+        <button class="home-button">Home</button>
+    </div>
+   </a> 
+</header>
+  <div class="overlay">
+    <h1>DO NOT DRINK AND DRIVE!!</h1>
+    <div class="button-container">
+      <a href="working.htm">
+        <button class="button">Working</button>
+      </a>
+      <a href="dnd.htm">
+        <button class="button">About</button>
+      </a>
+    </div>
+  </div>
+</body>
+</html>
